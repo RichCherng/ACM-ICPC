@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
+ 	
 class aout {
 
 	public static void main(String[] args){
