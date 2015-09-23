@@ -8,17 +8,13 @@ public class PowerCrisis {
 
 		String read;
 		int[] regions;
-		int numRegion;
-		int regionIndex;
-		int m;
-		int countOff;
-		int count;
+		int numRegion,regionIndex,m,countOff,count;
 
 		// Read
 		while (!(read = reader.nextLine()).equals("0")) {
 			regions = new int[Integer.parseInt(read)];
 			numRegion = Integer.parseInt(read);
-			m = 3;
+			m = 1;
 
 			// Until meet the requirement
 			while (true) {
