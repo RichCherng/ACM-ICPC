@@ -13,6 +13,7 @@ public class AncientCipher {
 			char[] cipher = reader.nextLine().toCharArray();
 			char[] mes = reader.nextLine().toCharArray();
 			
+			String res;
 			ArrayList<Character> c = new ArrayList<Character>();
 			ArrayList<Character> m = new ArrayList<Character>();
 			if(cipher.length == mes.length){
@@ -20,13 +21,17 @@ public class AncientCipher {
 					if(!c.contains((Character)cipher[i])){
 						c.add(cipher[i]);
 					}
-					if(!m.contains((Character)mes[i])){
+					if(!m.contains((Character)mes[i]) && (mes[i] > 64 && mes[i] < 91)){
 						m.add(mes[i]);
 					}
 				}
+				res = m.size() == c.size()? "YES":"NO";
+			}
+			else {
+				res = "NO";
 			}
 			
-			String res = m.size() == c.size()? "YES":"NO";
+			
 			System.out.println(res);
 		}
 		
